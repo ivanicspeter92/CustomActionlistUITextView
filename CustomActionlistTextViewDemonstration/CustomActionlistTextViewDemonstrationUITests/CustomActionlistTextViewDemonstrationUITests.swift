@@ -1,6 +1,6 @@
 //
 //  CustomActionlistTextViewDemonstrationUITests.swift
-//  CustomActionlistTextViewDemonstrationUITests
+//  CustomActionlistTextViewDemonstration
 //
 //  Created by Peter Ivanics on 29/01/16.
 //  Copyright © 2016 peterivanics. All rights reserved.
@@ -23,14 +23,64 @@ class CustomActionlistTextViewDemonstrationUITests: XCTestCase {
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func testTextViewActions()
+    {
+        let app = XCUIApplication();
+        let element = app.childrenMatchingType(.Window).elementBoundByIndex(0).childrenMatchingType(.Other).element;
+         /**************/
+        let normalTextView = element.childrenMatchingType(.TextView).elementBoundByIndex(0)
+        normalTextView.tap();
+        normalTextView.tap();
+        sleep(1);
+        
+        XCTAssertTrue(app.menuItems["Copy"].exists);
+        XCTAssertTrue(app.menuItems["Cut"].exists);
+        XCTAssertTrue(app.menuItems["Select All"].exists);
+        XCTAssertTrue(app.menuItems["Select"].exists);
+        XCTAssertTrue(app.menuItems["Paste"].exists);
+         /**************/
+        let copyOnlyTextView = element.childrenMatchingType(.TextView).elementBoundByIndex(1)
+        copyOnlyTextView.tap();
+        copyOnlyTextView.tap();
+        sleep(1);
+        
+        XCTAssertTrue(app.menuItems["Copy"].exists);
+        XCTAssertFalse(app.menuItems["Cut"].exists);
+        XCTAssertFalse(app.menuItems["Select All"].exists);
+        XCTAssertFalse(app.menuItems["Select"].exists);
+        XCTAssertFalse(app.menuItems["Paste"].exists);
+         /**************/
+        let readOnlyTextView = element.childrenMatchingType(.TextView).elementBoundByIndex(2);
+        readOnlyTextView.tap();
+        readOnlyTextView.tap();
+        sleep(1);
+        
+        XCTAssertFalse(app.menuItems["Copy"].exists);
+        XCTAssertFalse(app.menuItems["Cut"].exists);
+        XCTAssertFalse(app.menuItems["Select All"].exists);
+        XCTAssertFalse(app.menuItems["Select"].exists);
+        XCTAssertFalse(app.menuItems["Paste"].exists);
+         /**************/
+        let everythingButCutAndDeleteTextView = element.childrenMatchingType(.TextView).elementBoundByIndex(3);
+        everythingButCutAndDeleteTextView.tap();
+        everythingButCutAndDeleteTextView.tap();
+        sleep(1);
+        
+        XCTAssertTrue(app.menuItems["Copy"].exists);
+        XCTAssertFalse(app.menuItems["Cut"].exists);
+        XCTAssertTrue(app.menuItems["Select All"].exists);
+        XCTAssertTrue(app.menuItems["Select"].exists);
+        XCTAssertTrue(app.menuItems["Paste"].exists);
+        /**************/
+        let pasteAndSelectTextView = element.childrenMatchingType(.TextView).elementBoundByIndex(4);
+        pasteAndSelectTextView.tap();
+        pasteAndSelectTextView.tap();
+        sleep(1);
+        
+        XCTAssertFalse(app.menuItems["Copy"].exists);
+        XCTAssertFalse(app.menuItems["Cut"].exists);
+        XCTAssertTrue(app.menuItems["Select All"].exists);
+        XCTAssertTrue(app.menuItems["Select"].exists);
+        XCTAssertTrue(app.menuItems["Paste"].exists);
     }
-    
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
 }

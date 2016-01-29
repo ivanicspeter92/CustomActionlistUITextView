@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomActionlistTextViewDemonstration" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,96 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Peter Ivanics @ http://github.com/ivanicspeter92" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Exo-fd-meM">
+                                <rect key="frame" x="254" y="560" width="326" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="2Q4-vR-mXC"/>
+                                    <constraint firstAttribute="width" constant="326" id="fka-Vp-lev"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="I am a normal textview - you can perform anything on me" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DnE-1r-I2Q" customClass="CustomActionlistUITextView" customModule="CustomActionlistTextViewDemonstration" customModuleProvider="target">
+                                <rect key="frame" x="20" y="40" width="560" height="33"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="gZH-C5-D5Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You can perform only copy on me" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="goS-fl-EyI" customClass="CustomActionlistUITextView" customModule="CustomActionlistTextViewDemonstration" customModuleProvider="target">
+                                <rect key="frame" x="20" y="93" width="560" height="33"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="8Bm-Qu-Y1V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You cannot perform anything on me" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VhF-Vl-6Hg" customClass="CustomActionlistUITextView" customModule="CustomActionlistTextViewDemonstration" customModuleProvider="target">
+                                <rect key="frame" x="20" y="146" width="560" height="33"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="xhY-Zl-dIW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You can perform everything but cut on me" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PlQ-sh-YRE" customClass="CustomActionlistUITextView" customModule="CustomActionlistTextViewDemonstration" customModuleProvider="target">
+                                <rect key="frame" x="20" y="199" width="560" height="33"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="ugg-Zb-FKH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You can perform only paste, select and select all on me" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Bb-Ai-2cW" customClass="CustomActionlistUITextView" customModule="CustomActionlistTextViewDemonstration" customModuleProvider="target">
+                                <rect key="frame" x="20" y="252" width="560" height="33"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="wHK-bf-WCd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VhF-Vl-6Hg" firstAttribute="trailing" secondItem="PlQ-sh-YRE" secondAttribute="trailing" id="0Bk-xO-ZG0"/>
+                            <constraint firstItem="VhF-Vl-6Hg" firstAttribute="top" secondItem="goS-fl-EyI" secondAttribute="bottom" constant="20" id="9A5-cm-5Bd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Exo-fd-meM" secondAttribute="bottom" constant="8" symbolic="YES" id="DsP-Ia-WnS"/>
+                            <constraint firstItem="VhF-Vl-6Hg" firstAttribute="leading" secondItem="PlQ-sh-YRE" secondAttribute="leading" id="M2Z-We-aGf"/>
+                            <constraint firstItem="PlQ-sh-YRE" firstAttribute="trailing" secondItem="1Bb-Ai-2cW" secondAttribute="trailing" id="WF7-cU-rBY"/>
+                            <constraint firstItem="DnE-1r-I2Q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="bOu-dc-DdJ"/>
+                            <constraint firstItem="goS-fl-EyI" firstAttribute="top" secondItem="DnE-1r-I2Q" secondAttribute="bottom" constant="20" id="cgH-bp-Kl3"/>
+                            <constraint firstItem="DnE-1r-I2Q" firstAttribute="leading" secondItem="goS-fl-EyI" secondAttribute="leading" id="d5l-nb-Tgj"/>
+                            <constraint firstItem="goS-fl-EyI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dJ8-MK-dM0"/>
+                            <constraint firstItem="VhF-Vl-6Hg" firstAttribute="leading" secondItem="goS-fl-EyI" secondAttribute="leading" id="dJC-fT-E0p"/>
+                            <constraint firstItem="Exo-fd-meM" firstAttribute="trailing" secondItem="1Bb-Ai-2cW" secondAttribute="trailing" id="eKb-yU-YmE"/>
+                            <constraint firstItem="PlQ-sh-YRE" firstAttribute="leading" secondItem="1Bb-Ai-2cW" secondAttribute="leading" id="epN-Sm-SuA"/>
+                            <constraint firstItem="PlQ-sh-YRE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="lbO-cH-cNF"/>
+                            <constraint firstItem="1Bb-Ai-2cW" firstAttribute="top" secondItem="PlQ-sh-YRE" secondAttribute="bottom" constant="20" id="nE6-8R-mXJ"/>
+                            <constraint firstItem="PlQ-sh-YRE" firstAttribute="top" secondItem="VhF-Vl-6Hg" secondAttribute="bottom" constant="20" id="not-td-uEF"/>
+                            <constraint firstItem="VhF-Vl-6Hg" firstAttribute="trailing" secondItem="goS-fl-EyI" secondAttribute="trailing" id="qw7-lR-pbA"/>
+                            <constraint firstItem="goS-fl-EyI" firstAttribute="trailing" secondItem="DnE-1r-I2Q" secondAttribute="trailing" id="tkW-DA-Woe"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="copyOnlyTextView" destination="goS-fl-EyI" id="ZTL-v2-baP"/>
+                        <outlet property="everythingButCutTextView" destination="PlQ-sh-YRE" id="ti4-Yi-xQn"/>
+                        <outlet property="normalTextView" destination="DnE-1r-I2Q" id="y9E-ws-cnD"/>
+                        <outlet property="pasteAndSelectTextView" destination="1Bb-Ai-2cW" id="V38-Y8-Rfo"/>
+                        <outlet property="readOnlyTextView" destination="VhF-Vl-6Hg" id="fDf-jQ-3cF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="463" y="426"/>
         </scene>
     </scenes>
 </document>

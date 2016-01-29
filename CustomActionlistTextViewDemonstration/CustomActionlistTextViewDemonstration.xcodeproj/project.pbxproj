@@ -12,8 +12,9 @@
 		E5EB2DD41C5BCEDC00CC3EA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EB2DD21C5BCEDC00CC3EA3 /* Main.storyboard */; };
 		E5EB2DD61C5BCEDC00CC3EA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5EB2DD51C5BCEDC00CC3EA3 /* Assets.xcassets */; };
 		E5EB2DD91C5BCEDC00CC3EA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5EB2DD71C5BCEDC00CC3EA3 /* LaunchScreen.storyboard */; };
-		E5EB2DE41C5BCEDC00CC3EA3 /* CustomActionlistTextViewDemonstrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EB2DE31C5BCEDC00CC3EA3 /* CustomActionlistTextViewDemonstrationTests.swift */; };
-		E5EB2DEF1C5BCEDC00CC3EA3 /* CustomActionlistTextViewDemonstrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EB2DEE1C5BCEDC00CC3EA3 /* CustomActionlistTextViewDemonstrationUITests.swift */; };
+		E5EB2DFE1C5BCF3700CC3EA3 /* CustomActionlistUITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EB2DFC1C5BCF3700CC3EA3 /* CustomActionlistUITextView.swift */; };
+		E5EB2E001C5BCF5B00CC3EA3 /* CustomActionlistUITextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EB2DFD1C5BCF3700CC3EA3 /* CustomActionlistUITextViewTests.swift */; };
+		E5EB2E051C5BD13000CC3EA3 /* CustomActionlistTextViewDemonstrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5EB2E041C5BD13000CC3EA3 /* CustomActionlistTextViewDemonstrationUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +43,13 @@
 		E5EB2DD81C5BCEDC00CC3EA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5EB2DDA1C5BCEDC00CC3EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5EB2DDF1C5BCEDC00CC3EA3 /* CustomActionlistTextViewDemonstrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomActionlistTextViewDemonstrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5EB2DE31C5BCEDC00CC3EA3 /* CustomActionlistTextViewDemonstrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActionlistTextViewDemonstrationTests.swift; sourceTree = "<group>"; };
 		E5EB2DE51C5BCEDC00CC3EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5EB2DEA1C5BCEDC00CC3EA3 /* CustomActionlistTextViewDemonstrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomActionlistTextViewDemonstrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5EB2DEE1C5BCEDC00CC3EA3 /* CustomActionlistTextViewDemonstrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomActionlistTextViewDemonstrationUITests.swift; sourceTree = "<group>"; };
 		E5EB2DF01C5BCEDC00CC3EA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5EB2DFC1C5BCF3700CC3EA3 /* CustomActionlistUITextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomActionlistUITextView.swift; sourceTree = "<group>"; };
+		E5EB2DFD1C5BCF3700CC3EA3 /* CustomActionlistUITextViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomActionlistUITextViewTests.swift; path = ../CustomActionlistTextViewDemonstration/CustomActionlistUITextViewTests.swift; sourceTree = "<group>"; };
+		E5EB2E031C5BD12F00CC3EA3 /* CustomActionlistTextViewDemonstrationUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomActionlistTextViewDemonstrationUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		E5EB2E041C5BD13000CC3EA3 /* CustomActionlistTextViewDemonstrationUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomActionlistTextViewDemonstrationUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,7 @@
 				E5EB2DD51C5BCEDC00CC3EA3 /* Assets.xcassets */,
 				E5EB2DD71C5BCEDC00CC3EA3 /* LaunchScreen.storyboard */,
 				E5EB2DDA1C5BCEDC00CC3EA3 /* Info.plist */,
+				E5EB2DFC1C5BCF3700CC3EA3 /* CustomActionlistUITextView.swift */,
 			);
 			path = CustomActionlistTextViewDemonstration;
 			sourceTree = "<group>";
@@ -110,7 +114,7 @@
 		E5EB2DE21C5BCEDC00CC3EA3 /* CustomActionlistTextViewDemonstrationTests */ = {
 			isa = PBXGroup;
 			children = (
-				E5EB2DE31C5BCEDC00CC3EA3 /* CustomActionlistTextViewDemonstrationTests.swift */,
+				E5EB2DFD1C5BCF3700CC3EA3 /* CustomActionlistUITextViewTests.swift */,
 				E5EB2DE51C5BCEDC00CC3EA3 /* Info.plist */,
 			);
 			path = CustomActionlistTextViewDemonstrationTests;
@@ -119,8 +123,9 @@
 		E5EB2DED1C5BCEDC00CC3EA3 /* CustomActionlistTextViewDemonstrationUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E5EB2DEE1C5BCEDC00CC3EA3 /* CustomActionlistTextViewDemonstrationUITests.swift */,
 				E5EB2DF01C5BCEDC00CC3EA3 /* Info.plist */,
+				E5EB2E041C5BD13000CC3EA3 /* CustomActionlistTextViewDemonstrationUITests.swift */,
+				E5EB2E031C5BD12F00CC3EA3 /* CustomActionlistTextViewDemonstrationUITests-Bridging-Header.h */,
 			);
 			path = CustomActionlistTextViewDemonstrationUITests;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 			files = (
 				E5EB2DD11C5BCEDC00CC3EA3 /* ViewController.swift in Sources */,
 				E5EB2DCF1C5BCEDC00CC3EA3 /* AppDelegate.swift in Sources */,
+				E5EB2DFE1C5BCF3700CC3EA3 /* CustomActionlistUITextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5EB2DE41C5BCEDC00CC3EA3 /* CustomActionlistTextViewDemonstrationTests.swift in Sources */,
+				E5EB2E001C5BCF5B00CC3EA3 /* CustomActionlistUITextViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5EB2DEF1C5BCEDC00CC3EA3 /* CustomActionlistTextViewDemonstrationUITests.swift in Sources */,
+				E5EB2E051C5BD13000CC3EA3 /* CustomActionlistTextViewDemonstrationUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,10 +450,13 @@
 		E5EB2DFA1C5BCEDC00CC3EA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CustomActionlistTextViewDemonstrationUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = peterivanics.CustomActionlistTextViewDemonstrationUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CustomActionlistTextViewDemonstrationUITests/CustomActionlistTextViewDemonstrationUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_TARGET_NAME = CustomActionlistTextViewDemonstration;
 				USES_XCTRUNNER = YES;
 			};
@@ -456,10 +465,12 @@
 		E5EB2DFB1C5BCEDC00CC3EA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CustomActionlistTextViewDemonstrationUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = peterivanics.CustomActionlistTextViewDemonstrationUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CustomActionlistTextViewDemonstrationUITests/CustomActionlistTextViewDemonstrationUITests-Bridging-Header.h";
 				TEST_TARGET_NAME = CustomActionlistTextViewDemonstration;
 				USES_XCTRUNNER = YES;
 			};
